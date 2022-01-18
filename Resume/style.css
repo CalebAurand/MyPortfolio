@@ -1,0 +1,144 @@
+/* * {
+    border: 1pt solid red;
+} */
+
+body {
+    /* display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 15% 15% 70%; */
+    /* border: 2pt solid red;
+    grid-template-areas: 
+        "header header2"
+        "header3 header4"
+        "contacts article"
+        "contacts article"
+        "contacts article"; */
+}
+main {
+    display: grid;
+    /*grid-template-columns: 25% 75%;
+    grid-template-rows: 15% 15% 70%;
+    grid-column-gap: 3pt;
+    grid-row-gap: 3pt; */
+    background-color: #474747;
+    grid-template-areas: 
+        "header header2"
+        "header3 header4"
+        "contacts article1"
+        "contacts article2"
+        "contacts article3";
+
+}
+
+header {
+    /* display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50% 50%; */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;     */
+    height: 325pt;
+    justify-content: space-evenly;
+    row-gap: 3pt;
+    column-gap: 3pt;
+    grid-area: header;
+}
+
+figure {
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+    grid-area: header;
+    background-color: #7d7d7d;
+    width: 197px;
+    height: 310px;
+    border-radius: 30px;
+}
+
+#headshot {
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+    height: 200pt;
+    width: 140pt;
+    margin-top: 20px;
+    margin-left: 5px;
+    align-content: center;
+    border-radius: 30px;
+}
+
+.name {
+    /* grid-column: 2/3;
+    grid-row: 1/2; */
+    font-size: 33pt;
+    text-align: center;
+    border-radius: 30px;
+    width: 800px;
+    align-self: center;
+    justify-self: center;
+    grid-area: header2;
+    background-color: #6d6d6d;
+    margin: 2px 2px;
+    /* border: solid 2pt purple; */
+}
+
+.job-title {
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+    font-size: 24pt;
+    font-weight: bold;
+    margin-left: 10px;
+    grid-area: header3;
+}
+
+.intro {
+    /* grid-column: 2/3;
+    grid-row: 2/3; */
+    text-align: left;
+    font-size: 14pt;
+    height: 100pt;
+    width: 800px;
+    border-radius: 30px;
+    justify-self: center;
+    border: 3pt solid black;
+    margin: 10pt;
+    padding-top: 10px;
+    padding-left: 20px;
+    grid-area: header4;
+    background-color: #7d7d7d
+}
+
+.contact {
+    grid-area: contacts;
+    text-align: left;
+    font-size: 14pt;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    height: 500pt;
+    border: 3pt solid black;
+    background-color: #7d7d7d
+}
+
+.experience {
+    grid-area: article1;
+    text-align: left;
+    border: 3pt solid black;
+    font-size: 14pt;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #7d7d7d;
+
+}
+
+.prof-history {
+    grid-area: article2;
+    text-align: left;
+
+}
+
+.education {
+    grid-area: article3;
+}
