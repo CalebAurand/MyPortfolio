@@ -20,7 +20,7 @@ main {
     grid-template-rows: 15% 15% 70%;
     grid-column-gap: 3pt;
     grid-row-gap: 3pt; */
-    background-color: #474747;
+    background-color: white;
     grid-template-areas: 
         "header header2"
         "header3 header4"
@@ -49,7 +49,6 @@ figure {
     /* grid-column: 1/2;
     grid-row: 1/2; */
     grid-area: header;
-    background-color: #7d7d7d;
     width: 197px;
     height: 310px;
     border-radius: 30px;
@@ -69,14 +68,13 @@ figure {
 .name {
     /* grid-column: 2/3;
     grid-row: 1/2; */
-    font-size: 33pt;
+    display: flex;
+    font-size: 50pt;
     text-align: center;
-    border-radius: 30px;
-    width: 800px;
+    height: 220px;
     align-self: center;
     justify-self: center;
     grid-area: header2;
-    background-color: #6d6d6d;
     margin: 2px 2px;
     /* border: solid 2pt purple; */
 }
@@ -86,8 +84,10 @@ figure {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3; */
-    font-size: 24pt;
-    font-weight: bold;
+    font-size: 36pt;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
     margin-left: 10px;
     grid-area: header3;
 }
@@ -95,42 +95,46 @@ figure {
 .intro {
     /* grid-column: 2/3;
     grid-row: 2/3; */
+    display: flex;
     text-align: left;
-    font-size: 14pt;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     height: 100pt;
     width: 800px;
     border-radius: 30px;
-    justify-self: center;
-    border: 3pt solid black;
+    justify-self: left;
     margin: 10pt;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 2px;
+    padding-left: 5px;
     grid-area: header4;
-    background-color: #7d7d7d
 }
 
 .contact {
     grid-area: contacts;
-    text-align: left;
-    font-size: 14pt;
-    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10pt;
     padding: 10px;
     margin: 10px;
-    height: 500pt;
+    height: 600pt;
+    width: 225pt;
     border: 3pt solid black;
-    background-color: #7d7d7d
+    background-color: blue;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 .experience {
     grid-area: article1;
     text-align: left;
-    border: 3pt solid black;
     font-size: 14pt;
     border-radius: 30px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #7d7d7d;
-
+    padding-top: 2px;
+    margin: 2px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .prof-history {
@@ -141,4 +145,50 @@ figure {
 
 .education {
     grid-area: article3;
+}
+
+h2 {
+    font-size: xx-large;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.contact-h2 {
+    /* font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; */
+    color: white;
+}
+
+.line {
+    border: 1pt solid black;
+    padding: 0;
+    background-color: white;
+    width: 130pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.con-img {
+    height: 50px;
+    width: 50px;
+    margin: 2px auto;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.fig-img {
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+    align-items: center;
+    justify-items: center;
+}
+
+figure {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    position: relative;
+    left: 50px;
+
 }
