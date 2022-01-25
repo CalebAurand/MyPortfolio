@@ -1,0 +1,39 @@
+body {
+    background-image: url("milky-way.jpg");
+}
+
+h1 {
+    font-size: 40pt;
+    color: white;
+    background-color: rgba(55, 55, 105, 0.75);
+    border: 3px solid black;
+    text-align: center;
+    width: 75%;
+    margin-left: 12.5%;
+
+}
+
+h2 {
+    font-size: 26pt;
+    color: white;
+    background-color: rgba(55, 55, 105, 0.75);
+    border: 3px solid black;
+    width: 200px;
+    margin-left: 12.5%;
+}
+
+section {
+    font-size: 16pt;
+    color: black;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-left: 12.5%;
+    margin-right: 2.5%;
+    width: 75%;
+    padding-bottom: 1%;
+}
+
+li {
+    font-size: 14pt;
+    font-weight: normal;
+}
