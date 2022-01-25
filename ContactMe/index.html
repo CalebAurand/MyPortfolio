@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index-style.css">
+  <title>Document</title>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div class="des-input">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+    </div>
+    <div class="des-input">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <!-- <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" min="1" max="200" step="5">
+    </div> -->
+    <div class="des-input">
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <div class="des-input">
+<span>How did you hear about me?</span>      
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="banana" id="banana">
+      </div>
+      <div>
+        <label for="resume">Resume Submission</label>
+        <input type="checkbox" name="apple" id="apple">
+      </div>
+      <div>
+        <label for="resume">LinkedIn</label>
+        <input type="checkbox" name="apple" id="apple">
+      </div>
+      <div>
+        <label for="resume">Coding Academy Recruiter</label>
+        <input type="checkbox" name="apple" id="apple">
+      </div>
+    </div>
+    <div class="des-input">
+      <span>Would you like to be contacted back?</span>
+      <div>
+        <label id="yes" for="yes">Yes</label>
+        <input type="radio" name="contact-yes" id="yes" value="yes">
+      </div>
+      <div>
+        <label id="no" for="no">No</label>
+        <input type="radio" name="contact-no" id="no" value="no">
+      </div>
+      <!-- <div>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+      </div> -->
+    </div>
+    <!-- <div class="des-input">
+      <label for="eyeColor">Eye Color</label>
+      <select name="eyeColor" id="eyeColor" multiple>
+        <option value="Green">Green</option>
+        <option label="Red" value="Red"></option>
+      </select>
+    </div> -->
+    <div class="des-input">
+      <label for="comments">Comments</label>
+      <textarea id="bio" name="comment" minlength="20" maxlength="500"></textarea>
+    </div>
+    <input type="hidden" name="hidden" value="hi">
+    <!-- <div>
+      <label for="file">File</label>
+      <input id="file" type="file" name="file">
+    </div> -->
+    <div class="des-input">
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone">
+    </div>
+    <div class="des-input">
+      <label for="url">URL</label>
+      <input type="url" name="url" id="url">
+    </div>
+    
+   
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+  <!-- <script src="scripts.js"></script> -->
+</body>
+</html>

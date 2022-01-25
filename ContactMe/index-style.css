@@ -1,0 +1,119 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "form"
+        "submit";
+
+    background-image: url("milky-way.jpg");
+}
+
+label {
+    margin-left: 15%;
+}
+
+input {
+ display: inline-block;
+ width: 40%;
+ height: auto;
+ margin: 10px auto;
+ border: 2px groove black;
+}
+
+input[type=text] {
+    min-width: 50%;
+    max-width: 70%;
+}
+
+input[type=email] {
+    min-width: 50%;
+    max-width: 70%;
+}
+
+input[type=checkbox] {
+    margin-left: 2px;
+    max-width: 5%;
+}
+
+button[type=reset] {
+    max-width: 50%;
+    margin-left: 25%;
+}
+
+button[type=submit] {
+    max-width: 50%;
+    margin-left: 25%;
+}
+textarea {
+    min-width: 50%;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+h1 {
+    margin: auto;
+    color: white;
+    font-size: 40pt;
+    background-color: rgba(55, 55, 105, 0.3);
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    background-color: rgba(255, 254, 254, 0.75);
+    width: 60%;
+    min-width: 320px;
+}
+
+span {
+    /* background-color: white; */
+    /* width: 300pt; */
+    text-align: center;
+    margin-left: 20%;
+    border: 2px solid black;
+}
+
+.des-input {
+    background-color: rgba(255, 254, 254, 0.5);
+}
+
+
+@media (min-width: 900px){
+
+body {
+    background-image: url("milky-way.jpg");
+
+}
+
+form {
+    margin: auto;
+    min-width: 40%;
+    max-width: 70%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+input[type=checkbox] {
+    margin-left: 2px;
+}
+
+
+label {
+    /* background-color: rgba(255, 255, 255, 0.75); */
+    margin-left: 15%;
+}
+
+div {
+    /* width: 700pt; */
+    /* background-color: rgba(255, 254, 254, 0.75); */
+
+}
+}
